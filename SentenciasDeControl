@@ -1,0 +1,46 @@
+public class Main {
+    public static void main(String[] args) {
+        int numeroIf = -3;
+        int numeroWhile = 0;
+        int numerodoWhile = 0;
+        int numeroFor = 0;
+        String estacion = "Primavera";
+
+        if  (numeroIf < 0){
+            System.out.println("El numero "+numeroIf+" es Negativo");
+        } else if (numeroIf == 0) {
+            System.out.println("El numero "+numeroIf+" es igual a 0");
+        } else if (numeroIf > 0) {
+            System.out.println("El numero "+numeroIf+" es Positivo");
+        }
+        while (numeroWhile <3){
+            System.out.println("While "+ numeroWhile);
+            numeroWhile ++;
+        }
+        do {
+            System.out.println("Do While " + numerodoWhile);
+            numerodoWhile ++;
+        }while (numerodoWhile == 0);
+        for (;numeroFor <= 3; numeroFor ++){
+            System.out.println("For " + numeroFor);
+        }
+        switch (estacion){
+            case "Primavera":
+                System.out.println("Estamos en "+ estacion);
+                break;
+            case "Verano":
+                System.out.println("Estamos en "+ estacion);
+                break;
+            case "Otono":
+                System.out.println("Estamos en "+ estacion);
+                break;
+            case "Invierno":
+                System.out.println("Estamos en "+ estacion);
+                break;
+            default:
+                System.out.println("Esa no es una estacion");
+        }
+    }
+}
+
+

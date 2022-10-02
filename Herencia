@@ -1,0 +1,36 @@
+public class Main {
+    public static void main(String[] args) {
+        Cliente cliente = new Cliente();
+        Trabajador trabajador = new Trabajador();
+        cliente.Cliente(25,"Allan","+504 8207-9567",100000);
+        System.out.println("CLIENTE: \nEdad: "+cliente.edad + "\nNombre: "+cliente.nombre +"\nTelefono: "+ cliente.telefono + "\nCredito: "+cliente.credito+"\n");
+        trabajador.Trabajador(32,"Felipe","+504 9206-8923", 25000);
+        System.out.println("TRABAJADOR: \nEdad: "+trabajador.edad + "\nNombre: "+trabajador.nombre +"\nTelefono: "+ trabajador.telefono + "\nSalario: "+trabajador.salario+"\n");
+    }
+}
+
+class Persona {
+     int edad;
+     String nombre;
+     String telefono;
+}
+
+class Cliente extends Persona{
+    int credito;
+    public void Cliente (int edad , String nombre , String telefono , int credito){
+        this.edad = edad;
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.credito = credito;
+    }
+}
+
+class Trabajador extends Persona{
+    int salario;
+    public void Trabajador (int edad , String nombre , String telefono , int salario){
+        this.edad = edad;
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.salario = salario;
+    }
+}

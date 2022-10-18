@@ -1,0 +1,8 @@
+def validacion(A):
+    if (A % 4 == 0 and A % 100 ==0 and A % 400 ==0) or (A % 4 == 0 and A % 100 != 0):
+        return True
+    return False
+
+anio = input("Ingrese el año que desea comprobar: ")
+print("El año ", anio," es bisiesto? ")
+print(validacion(int(anio)))

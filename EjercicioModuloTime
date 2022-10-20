@@ -1,0 +1,9 @@
+import time
+
+hora = time.strftime('%H')
+mins = time.strftime('%M')
+
+if int(hora) >= 19:
+    print("Hora de ir a casa")
+else:
+    print("Aun faltan ",(18-int(hora))," horas y ",(59-int(mins))," para ir a casa")

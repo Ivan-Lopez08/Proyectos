@@ -1,0 +1,11 @@
+import calculadora as op
+def main():
+    a = 4
+    b = 5
+    print(op.sumar(a,b))
+    print(op.restar(a,b))
+    print(op.dividir(a,b))
+    print(op.multiplicar(a,b))
+
+if __name__ == '__main__':
+    main()

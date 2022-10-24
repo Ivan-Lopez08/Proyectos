@@ -1,0 +1,10 @@
+f = open('cosas.txt','r')
+f.close
+
+lista = ['Hola buenos dias','hola buenAs tardes','hola buenas noches']
+r = open('cosas.txt','w')
+for list in lista:
+    if not list.endswith('\n'):
+        list = list.capitalize() + '\n'
+    r.write(list)
+r.close()

@@ -1,0 +1,21 @@
+import pickle
+
+class Vehiculo():
+    color = None
+    ruedas = 0
+    motor = None
+    def __init__(self,color,ruedas,motor):
+        self.color = color
+        self.ruedas = ruedas
+        self.motor = motor
+
+carro = Vehiculo('azul',4,'diesel')
+f = open('objeto.txt','wb')
+pickle.dump(carro,f)
+f.close()
+
+f = open('objeto.txt','rb')
+coche = pickle.load(f)
+f.close()
+
+print(f'EL coche es color {coche.color} tiene {coche.ruedas} ruedas y contiene un motor {coche.motor}')

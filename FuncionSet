@@ -1,0 +1,3 @@
+paises = input("Ingrese una lista de paises separados por comas ',' : \n").split(', ')
+paisesordenado= set(paises)
+print(", ".join(paisesordenado))

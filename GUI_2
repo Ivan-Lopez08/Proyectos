@@ -1,0 +1,12 @@
+from tkinter import *
+
+window = Tk()
+label = Label(text="Paises de Centroamerica")
+label.pack()
+listbox = Listbox(window)
+paises = ['Honduras', 'Guatemala', 'Panama', 'Costa Rica', 'Belice', 'El Salvador', 'Nicaragua']
+for item in paises:
+    listbox.insert(END, item)
+listbox.pack()
+
+window.mainloop()

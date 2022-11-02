@@ -1,0 +1,20 @@
+from tkinter import *
+
+def imprimir():
+    monitor.config(text=f'{opcion.get()}')
+def reset():
+    opcion.set(None)
+    monitor.config(text="")
+
+window = Tk()
+opcion = StringVar()
+opcion.set(None)
+Radiobutton(window, text="Suma", variable=opcion, value='Suma', command=imprimir).pack(anchor=W, pady=5, padx=5)
+Radiobutton(window, text="Resta", variable=opcion, value='Resta', command=imprimir).pack(anchor=W, pady=5, padx=5)
+Radiobutton(window, text="Multiplicacion", variable=opcion, value='Multiplicacion', command=imprimir).pack(anchor=W, pady=5, padx=5)
+Radiobutton(window, text="Division", variable=opcion, value='Division', command=imprimir).pack(anchor=W, pady=5, padx=5)
+monitor = Label(window)
+monitor.pack()
+Button(window, text="Reiniciar", command=reset).pack()
+
+window.mainloop()
